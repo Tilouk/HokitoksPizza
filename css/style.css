@@ -1,3 +1,28 @@
+
 body {
-    background-color:palegreen;
+    background-color: rgb(90, 160, 24);
 }
+
+div p {
+    background-color: rgba(142, 129, 199, 0.966);
+  }
+    
+div > h1 {
+    background-color: darkcyan;
+}
+
+div + p {
+    background-color: darkviolet;
+}
+
+a:link {
+    background-color: coral;
+}
+    
+a:visited {
+    color: rgb(131, 15, 35);
+}
+
+a:hover {
+    background-color: #dfdfd0;
+}     
