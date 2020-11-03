@@ -26,3 +26,46 @@ a:visited {
 a:hover {
     background-color: #dfdfd0;
 }     
+
+
+@media only scree and (min-width:768px) {
+
+     .photo {
+
+        max-width: 50%;
+        float: left;
+        margin-right: 1rem;
+     }
+
+}
+
+
+.photo {
+
+    max-width: 100%;
+}
+
+
+@media only screen and (min width: 991px) {
+
+    .grid-container {
+
+        grid-template-rows: 120 px 1fr 30px;
+    }
+}
+
+
+header-button {
+
+    display: none;
+}
+
+#pizza1:hover {
+    border-radius: 40px;
+    transition: border-radius o.5s ease-in-out;
+}
+
+#pizza2:active {
+    box-shadow: 5px 5px red;
+    transition: box-shadow 0.5s ease-in-out;
+}
