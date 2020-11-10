@@ -1,52 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav {
+    width: 1100px;
+    background-color: tomato;
+    margin: auto;
+    overflow: auto;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+li {
+    float: left;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    height: 45px;
+    padding: 1rem;
+    position: relative;
+}
+
+
+nav ul li li {
+    justify-content: flex-start;
+}
+
+
+nav ul li:hover {
+    background-color: navy;
+}
+
+
+nav ul li:hover > a {
+    color: white;
+}
+
+
+nav ul li:hover > ul {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 150px;
+}
+
+
+nav ul li a {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #444;
+}
+
+
+nav ul li > ul {
+    display: none;
+    flex-direction: column;
+}
+
+
+button {
+    display: none;
+    font-size: 3em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+nav > ul {
+    flex-direction: column;
+    width: 220px;
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+
+button {
+    display: block;
+}
+
+
 
 body {
-    background-color: rgb(90, 160, 24);
+    margin: 0;
+    background-image:url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg) ;
 }
+
 
 div p {
-    background-color: rgba(142, 129, 199, 0.966);
+    background-color: rgba(36, 119, 139, 0.966);
   }
-    
+   
+  
 div > h1 {
-    background-color: darkcyan;
+    background-color: rgb(190, 161, 64);
 }
 
-div + p {
-    background-color: darkviolet;
-}
+
 
 a:link {
-    background-color: coral;
+    color: thistle;
+    width: 130px;
+    text-decoration: teal;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
 }
     
+
 a:visited {
     color: rgb(131, 15, 35);
 }
 
+
 a:hover {
-    background-color: #dfdfd0;
+    background-color: #020200;
 }     
 
-
-@media only scree and (min-width:768px) {
-
-     .photo {
-
-        max-width: 50%;
-        float: left;
-        margin-right: 1rem;
-     }
-
-}
 
 
 .photo {
 
+    width: 20%;
+    height: 40%;
     max-width: 100%;
+    float: left;
+    margin: 2px;
 }
 
 
-@media only screen and (min width: 991px) {
+.pictures {
+
+    max-width: 100%;
+    float: left;
+    margin: 2px;
+    padding: 10px;
+}
+
+
+@media only screen and (min: 991px) {
 
     .grid-container {
 
@@ -60,12 +180,127 @@ header-button {
     display: none;
 }
 
+
 #pizza1:hover {
     border-radius: 40px;
     transition: border-radius o.5s ease-in-out;
 }
 
+
 #pizza2:active {
     box-shadow: 5px 5px red;
     transition: box-shadow 0.5s ease-in-out;
 }
+
+
+footer {
+    width: auto;
+    height: 100px;
+    background-color: seagreen;
+    color: #130414;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+
+.header {
+    width: 1100px;
+    height: 350;
+    margin: auto;
+}
+
+
+
+p {
+    display: inline;
+    font-family: Arial;
+    text-align: justify;
+}
+
+
+h1 {
+    color: rgb(66, 12, 214);
+    text-align: center;
+    background-color: grey;
+}
+
+
+h2 {
+
+    color: rgb(66, 12, 214);
+    text-align: center;
+    background-color: grey;
+}
+
+
+h3 {
+
+    color: rgb(66, 12, 214);
+    text-align: center;
+    background-color: grey;
+}
+
+
+.container {
+    max-width: 900px;
+    max-height: 900px;
+    margin: auto;
+    width: 85%;
+    overflow: auto;
+    background: #310a0a;
+}
+
+
+iframe {
+    float: left;
+    width: 500px;
+    height: 460px;
+    padding: 0 10px 0 0;
+}
+
+
+.text {
+    text-align: justify;
+    font-family: Tahoma;
+    background-color: black;
+    color: rgb(19, 226, 88);
+} 
+
+
+.paragraph {
+    float: center;
+}
+
+
+.video {
+    float: left;
+}
+
+
+.gallery {
+    margin: 10px;
+    border: 10px;
+    float: left;
+    width: 400px;
+}
+
+
+.gallery img {
+    width: 45%;
+    height: 45%;
+}
+
+
+.image {
+    width: 20%;
+    height: 20%;
+    align-self: left;
+}
+
+
+.desc {
+    padding: 15px;
+    text-align: left;
+    color: blue;
+} 
